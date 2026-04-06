@@ -1,0 +1,84 @@
+collection framework
+
+
+why collections?
+	mostly we will utilize arrays for everything that is stored continuously
+	
+	int[] a = new int[(must mention size)  n ];
+	* we cant extend the array as per our wish during runtime
+	* this is the main reason for JCF to some into handy
+
+what is JCF?
+
+	java collection framework which has additional functionalities
+ORIGIN STORY:
+
+Interface 
+ |
+Collections
+|
+| - list 
+|	| - ArrayList
+|	| - LinkedList
+| - set
+|	| - HashSet
+|	| - LinkedHash
+|	| - TreeSet
+| - map
+|	| - HashMap
+|	| - TreeMap
+| - queue
+	| - Deque
+
+how it's stored
+Collection -> List -> ArrayList
+
+Interface -> Interface -> class
+
+List
+
+	List has two types
+		1. ArrayList
+		2. LinkedList
+
+memory allocation of arrayList
+	initially the memory of out arrayList is 10
+	new ArraList<>();
+	[_, _, _, _, _, _, _, _, _, _]
+
+	dynamic memory = old memory + (old memory / 2)
+	 = 10 + 5
+	 = 15
+	
+	once the memory is full automatically the new memory is kicks in
+	[1,2,3,4,5,6,7,8,9,10,_, _, _, _, _]
+
+	list.size() would always give the total amount of elements stored not the total size of the array.
+
+LinkedList
+
+class Node {
+	int data;
+	Node next;
+	Node prev;
+}
+
+arrList.get(1) // print it
+
+remove from the list 
+arrList.remove(remove index: 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
